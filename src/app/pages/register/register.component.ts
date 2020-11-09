@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
-import { SignupRequestPayload } from './register-request.payload';
+import { RegisterRequestPayload } from './register-request.payload';
 import { AuthService } from '../shared/auth.service';
 import { ToastrService } from 'ngx-toastr';
 import { Router } from '@angular/router';
@@ -12,12 +12,12 @@ import { Router } from '@angular/router';
 })
 export class RegisterComponent implements OnInit {
 
-  signupRequestPayload: SignupRequestPayload;
-  signupForm: FormGroup;
+  registerRequestPayload: RegisterRequestPayload;
+  registerForm: FormGroup;
 
   constructor(private authService: AuthService, private router: Router,
     private toastr: ToastrService) {
-    this.signupRequestPayload = {
+    this.registerRequestPayload = {
       username: '',
       email: '',
       password: ''
@@ -25,19 +25,19 @@ export class RegisterComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.signupForm = new FormGroup({
+    this.registerForm = new FormGroup({
       username: new FormControl('', Validators.required),
       email: new FormControl('', [Validators.required, Validators.email]),
       password: new FormControl('', Validators.required),
     });
   }
 
-  signup() {
-    this.signupRequestPayload.email = this.signupForm.get('email').value;
-    this.signupRequestPayload.username = this.signupForm.get('username').value;
-    this.signupRequestPayload.password = this.signupForm.get('password').value;
+  register() {
+    this.registerRequestPayload.email = this.registerForm.get('email').value;
+    this.registerRequestPayload.username = this.registerForm.get('username').value;
+    this.registerRequestPayload.password = this.registerForm.get('password').value;
 
-    this.authService.signup(this.signupRequestPayload)
+    this.authService.register(this.registerRequestPayload)
       .subscribe(data => {
         this.router.navigate(['/login'],
           { queryParams: { registered: 'true' } });

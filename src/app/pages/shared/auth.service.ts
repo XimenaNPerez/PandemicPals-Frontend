@@ -1,6 +1,6 @@
 import { Injectable, Output, EventEmitter } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { SignupRequestPayload } from '../register/register-request.payload';
+import { RegisterRequestPayload } from '../register/register-request.payload';
 import { Observable, throwError } from 'rxjs';
 import { LocalStorageService } from 'ngx-webstorage';
 import { LoginRequestPayload } from '../login/login-request.payload';
@@ -24,8 +24,8 @@ export class AuthService {
     private localStorage: LocalStorageService) {
   }
 
-  signup(signupRequestPayload: SignupRequestPayload): Observable<any> {
-    return this.httpClient.post('http://localhost:8080/api/auth/signup', signupRequestPayload, { responseType: 'text' });
+  register(RegisterRequestPayload: RegisterRequestPayload): Observable<any> {
+    return this.httpClient.post('http://localhost:8080/api/auth/register', RegisterRequestPayload, { responseType: 'text' });
   }
 
   login(loginRequestPayload: LoginRequestPayload): Observable<boolean> {
@@ -40,7 +40,7 @@ export class AuthService {
         this.username.emit(data.username);
         return true;
       }));
-  }
+  } 
 
   getJwtToken() {
     return this.localStorage.retrieve('authenticationToken');
@@ -57,7 +57,7 @@ export class AuthService {
           response.authenticationToken);
         this.localStorage.store('expiresAt', response.expiresAt);
       }));
-  }
+  } 
 
   logout() {
     this.httpClient.post('http://localhost:8080/api/auth/logout', this.refreshTokenPayload,
