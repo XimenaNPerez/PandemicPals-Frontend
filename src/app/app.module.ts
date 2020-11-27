@@ -12,16 +12,17 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
+import { MatDialogModule } from '@angular/material/dialog';
 
-import { SignupComponent } from './auth/signup/signup.component';
+import { RegisterComponent } from './pages/register/register.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
-import { LoginComponent } from './auth/login/login.component';
+import { LoginComponent } from './pages/login/login.component';
 import { NgxWebstorageModule } from 'ngx-webstorage';
 import { ToastrModule } from 'ngx-toastr';
-import { TokenInterceptor } from './token-interceptor';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { UserProfileComponent } from './auth/user-profile/user-profile.component';
+//import { TokenInterceptor } from './token-interceptor';
+//import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+//import { UserProfileComponent } from './pages/user-profile/user-profile.component';
 
 
 @NgModule({
@@ -29,30 +30,31 @@ import { UserProfileComponent } from './auth/user-profile/user-profile.component
     ReactiveFormsModule,
     NgxWebstorageModule.forRoot(),
     ToastrModule.forRoot(),
-    FontAwesomeModule,
+    //FontAwesomeModule,
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
     ComponentsModule,
     NgbModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatDialogModule
   ],
   declarations: [
     AppComponent,
     AdminLayoutComponent,
     AuthLayoutComponent,
-    SignupComponent,
+    RegisterComponent,
     LoginComponent,
-    UserProfileComponent
+    //UserProfileComponent
   ],
-  providers: [
+  /* providers: [
     {
       provide: HTTP_INTERCEPTORS,
       useClass: TokenInterceptor,
       multi: true
     }
-  ],
+  ], */
   bootstrap: [AppComponent]
 })
 export class AppModule { }

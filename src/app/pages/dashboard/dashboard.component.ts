@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import Chart from 'chart.js';
+import { PostModel } from '../../shared/post-model';
+import { PostService } from '../../shared/post.service';
+import {MatDialog} from '@angular/material/dialog';
 
 // core components
 import {
@@ -57,4 +60,33 @@ export class DashboardComponent implements OnInit {
     this.salesChart.update();
   }
 
+/*   goToCreatePost() {
+    this.router.navigateByUrl('/create-post');    
+  } */
+
 }
+
+/**
+ * @title Dialog with header, scrollable content and actions
+ */
+@Component({
+  selector: 'app-dashboard',
+  templateUrl: './dashboard.component.html',
+})
+export class DialogElementsExample {
+  constructor(public dialog: MatDialog) {}
+
+  openDialog() {
+    this.dialog.open(DialogElementsExampleDialog);
+  }
+}
+
+
+@Component({
+  selector: 'new-post-dialog',
+  templateUrl: 'new-post-dialog.html',
+})
+export class DialogElementsExampleDialog {}
+
+
+
