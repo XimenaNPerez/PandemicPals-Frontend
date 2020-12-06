@@ -83,8 +83,8 @@ export class DialogElementsExample {
 
 
 @Component({
-  selector: 'new-post-dialog',
-  templateUrl: 'new-post-dialog.html',
+  selector: 'create-post-dialog',
+  templateUrl: 'create-post-dialog.html',
 })
 export class DialogElementsExampleDialog {}
 
