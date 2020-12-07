@@ -3,6 +3,8 @@ import Chart from 'chart.js';
 import { PostModel } from '../../shared/post-model';
 import { PostService } from '../../shared/post.service';
 import {MatDialog} from '@angular/material/dialog';
+import { Router } from '@angular/router'; 
+
 
 // core components
 import {
@@ -60,7 +62,7 @@ export class DashboardComponent implements OnInit {
     this.salesChart.update();
   }
 
-/*   goToCreatePost() {
+  /* goToCreatePost() {
     this.router.navigateByUrl('/create-post');    
   } */
 
