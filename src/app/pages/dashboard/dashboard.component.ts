@@ -71,7 +71,7 @@ export class DashboardComponent implements OnInit {
 /**
  * @title Dialog with header, scrollable content and actions
  */
-@Component({
+/* @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
 })
@@ -82,13 +82,13 @@ export class DialogElementsExample {
     this.dialog.open(DialogElementsExampleDialog);
   }
 }
-
-
+ */
+/* 
 @Component({
   selector: 'create-post-dialog',
   templateUrl: 'create-post-dialog.html',
 })
 export class DialogElementsExampleDialog {}
-
+ */
 
 

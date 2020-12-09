@@ -33,6 +33,7 @@ const routes: Routes =[
     path: '**',
     redirectTo: 'dashboard'
   }
+  //, { path: '', component: CreatePostComponent}
 ];
 
 @NgModule({
