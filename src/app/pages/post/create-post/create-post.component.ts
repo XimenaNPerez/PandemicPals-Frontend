@@ -49,14 +49,14 @@ export class CreatePostComponent implements OnInit {
     this.postPayload.description = this.createPostForm.get('description').value;
 
     this.postService.createPost(this.postPayload).subscribe((data) => {
-      this.router.navigateByUrl(['/create-post']);
+      this.router.navigateByUrl('/');
     }, error => {
       throwError(error);
     })
   }
 
-  /* discardPost() {
+  discardPost() {
     this.router.navigateByUrl('/');
-  } */
+  }
 
 }

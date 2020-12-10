@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-advicfe',
+  selector: 'app-advice',
   templateUrl: './advice.component.html',
   styleUrls: ['./advice.component.scss']
 })
-export class IconsComponent implements OnInit {
+export class AdviceComponent implements OnInit {
 
   public copy: string;
   constructor() { }
