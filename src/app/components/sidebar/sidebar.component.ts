@@ -10,18 +10,17 @@ declare interface RouteInfo {
 export const ROUTES: RouteInfo[] = [
     { path: '/register', title: 'Register',  icon:'ni-circle-08 text-pink', class: '' },
     { path: '/login', title: 'Login',  icon:'ni-key-25 text-info', class: '' },
-    { path: '/user-profile', title: 'User profile',  icon:'ni-single-02 text-yellow', class: '' },
+    { path: '/user-profile', title: 'User Profile',  icon:'ni-single-02 text-yellow', class: '' },
     { path: '/dashboard', title: 'Home Page',  icon: 'ni-tv-2 text-primary', class: '' },
 
     { path: '/icons', title: 'Icons',  icon:'ni-planet text-blue', class: '' },
     
-    
-    { path: '/create-post', title: 'Create New Post',  icon:'ni-planet text-blue', class: '' },
+    { path: '/create-post', title: 'Create Post',  icon:'ni-planet text-blue', class: '' },
     
     // channels
     { path: '/advice', title: 'Advice',  icon:'ni-planet text-blue', class: '' },
-    { path: '/resources', title: 'Resources',  icon:'ni-planet text-blue', class: '' },
-    { path: '/social', title: 'Social',  icon:'ni-planet text-blue', class: '' },
+    // { path: '/resources', title: 'Resources',  icon:'ni-planet text-blue', class: '' },
+    // { path: '/social', title: 'Social',  icon:'ni-planet text-blue', class: '' },
 
     //{ path: '/maps', title: 'Maps',  icon:'ni-pin-3 text-orange', class: '' },
     //{ path: '/tables', title: 'Tables',  icon:'ni-bullet-list-67 text-red', class: '' },

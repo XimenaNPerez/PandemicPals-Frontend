@@ -20,6 +20,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { LoginComponent } from './pages/login/login.component';
 import { NgxWebstorageModule } from 'ngx-webstorage';
 import { ToastrModule } from 'ngx-toastr';
+//import { CreatePostComponent } from './pages/post/create-post/create-post.component';
 //import { TokenInterceptor } from './token-interceptor';
 //import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 //import { UserProfileComponent } from './pages/user-profile/user-profile.component';
@@ -46,6 +47,7 @@ import { ToastrModule } from 'ngx-toastr';
     AuthLayoutComponent,
     RegisterComponent,
     LoginComponent,
+    //CreatePostComponent
     //UserProfileComponent
   ],
   /* providers: [

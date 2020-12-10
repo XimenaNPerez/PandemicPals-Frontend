@@ -25,7 +25,7 @@ export class CreatePostComponent implements OnInit {
       url: '',
       description: '',
       subredditName: ''
-    }
+    };
   }
 
   ngOnInit() {
@@ -49,14 +49,14 @@ export class CreatePostComponent implements OnInit {
     this.postPayload.description = this.createPostForm.get('description').value;
 
     this.postService.createPost(this.postPayload).subscribe((data) => {
-      this.router.navigateByUrl('/');
+      this.router.navigateByUrl(['/create-post']);
     }, error => {
       throwError(error);
     })
   }
 
-  discardPost() {
+  /* discardPost() {
     this.router.navigateByUrl('/');
-  }
+  } */
 
 }
