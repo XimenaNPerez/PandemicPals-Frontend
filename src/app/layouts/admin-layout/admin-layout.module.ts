@@ -14,6 +14,9 @@ import { TablesComponent } from '../../pages/tables/tables.component';
 import { CreatePostComponent } from '../../pages/post/create-post/create-post.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AdviceComponent } from '../../pages/advice/advice.component';
+import { SocialComponent } from '../../pages/social/social.component';
+import { ResourcesComponent } from '../../pages/resources/resources.component';
+
 // import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
@@ -32,7 +35,9 @@ import { AdviceComponent } from '../../pages/advice/advice.component';
     IconsComponent,
     MapsComponent,
     CreatePostComponent,
-    AdviceComponent
+    AdviceComponent,
+    ResourcesComponent,
+    SocialComponent
   ]
 })
 

@@ -19,6 +19,8 @@ export const ROUTES: RouteInfo[] = [
     
     // channels
     { path: '/advice', title: 'Advice',  icon:'ni-planet text-blue', class: '' },
+    { path: '/social', title: 'Social',  icon:'ni-planet text-blue', class: '' },
+    { path: '/resources', title: 'Resources',  icon:'ni-planet text-blue', class: '' },
     // { path: '/resources', title: 'Resources',  icon:'ni-planet text-blue', class: '' },
     // { path: '/social', title: 'Social',  icon:'ni-planet text-blue', class: '' },
 
