@@ -25,7 +25,7 @@ export class AuthService {
   }
 
   register(RegisterRequestPayload: RegisterRequestPayload): Observable<any> {
-    return this.httpClient.post('http://localhost:8080/api/auth/register', RegisterRequestPayload, { responseType: 'text' });
+    return this.httpClient.post('http://localhost:8080/api/auth/signup', RegisterRequestPayload, { responseType: 'text' });
   }
 
   login(loginRequestPayload: LoginRequestPayload): Observable<boolean> {
