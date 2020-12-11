@@ -62,9 +62,9 @@ export class DashboardComponent implements OnInit {
     this.salesChart.update();
   }
 
-  /* goToCreatePost() {
+/*  goToCreatePost() {
     this.router.navigateByUrl('/create-post');    
-  } */
+  }  */
 
 }
 
