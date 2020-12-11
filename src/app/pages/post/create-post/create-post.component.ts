@@ -22,7 +22,7 @@ export class CreatePostComponent implements OnInit {
     private subredditService: SubredditService) {
     this.postPayload = {
       postName: '',
-      url: '',
+      //url: '',
       description: '',
       subredditName: ''
     };
@@ -45,7 +45,7 @@ export class CreatePostComponent implements OnInit {
   createPost() {
     this.postPayload.postName = this.createPostForm.get('postName').value;
     this.postPayload.subredditName = this.createPostForm.get('subredditName').value;
-    this.postPayload.url = this.createPostForm.get('url').value;
+    //this.postPayload.url = this.createPostForm.get('url').value;
     this.postPayload.description = this.createPostForm.get('description').value;
 
     this.postService.createPost(this.postPayload).subscribe((data) => {
