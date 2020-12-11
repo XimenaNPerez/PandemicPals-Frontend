@@ -1,4 +1,4 @@
-<div class="container">
+<!-- <div class="container">
     <div class="row">
       <hr />
       <div class="create-post-container col-md-9">
@@ -6,58 +6,9 @@
           <div class="form-group">
             <div class="create-post-heading">Create Post</div>
             <hr />
-<!--             <input type="text" [formControlName]="'postName'" class="form-control" style="margin-top: 5px"
-              placeholder="Title"> -->
+
+            ----
   
-            <!-- <input type="text" class="form-control" [formControlName]="'url'" style="margin-top: 5px" placeholder="URL"> -->
-  
-            <!-- <select class="form-control" style="margin-top: 10px" [formControlName]="'subredditName'">
-              <option value="" selected disabled>Select Subreddit</option>
-              <option *ngFor="let subreddit of subreddits">{{subreddit.name}}</option>
-            </select> -->
-  
-            <editor [formControlName]="'description'" [init]="{
-                        height: 500,
-                        menubar: false,
-                        plugins: [
-                          'advlist autolink lists link image charmap print preview anchor',
-                          'searchreplace visualblocks code fullscreen',
-                          'insertdatetime media table paste code help wordcount'
-                        ],
-                        toolbar:
-                          'undo redo | formatselect | bold italic backcolor | \
-                          alignleft aligncenter alignright alignjustify | \
-                          bullist numlist outdent indent | removeformat | help'
-                      }"></editor>
-<!--             <span>
-              <div style="margin-top: 5px" class="float-right">
-                <button (click)="discardPost()" class="btnDiscard">Discard</button>
-                <button class="btnCreatePost">Post</button>
-              </div>
-            </span> -->
-            <div class="card" style="width: 50rem;">
-              <div class="card-body">
-                <!-- <h4 class="card-title">Post Title</h4> -->
-                <input type="text" [formControlName]="'postName'" class="form-control" style="margin-top: 5px"
-                placeholder="Title">                
-                <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <editor [formControlName]="'description'" [init]="{
-                  height: 500,
-                  menubar: false,
-                  plugins: [
-                    'advlist autolink lists link image charmap print preview anchor',
-                    'searchreplace visualblocks code fullscreen',
-                    'insertdatetime media table paste code help wordcount'
-                  ],
-                  toolbar:
-                    'undo redo | formatselect | bold italic backcolor | \
-                    alignleft aligncenter alignright alignjustify | \
-                    bullist numlist outdent indent | removeformat | help'
-                }"></editor>
-<!--                 <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a> -->
-                <br>
                 <button class="btnCreatePost">Create Post</button>                
                 <button (click)="discardPost()" class="btnDiscard">Cancel</button>
               </div>
@@ -66,4 +17,48 @@
         </form>
       </div>
     </div>
+  </div> -->
+
+  <div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+    <div class="container-fluid">
+      <div class="header-body">
+  
+        <br>
+  
+        <!-- Card stats -->
+        <div class="card" style="width: 50rem;">
+          <div class="card-body">
+              <form>
+                  <div class="form-group">
+                      <label for="inputName">Title</label>
+                      <input type="text" class="form-control" id="inputName">
+                  </div>
+                  
+                  <label for="inputName">Select Channel</label>
+                  <br>
+                  <button class="btn btn-info btn-sm">Advice</button>
+                  <button class="btn btn-success btn-sm">Social</button>
+                  <button class="btn btn-warning btn-sm">Resources</button>
+
+                  <br>                
+                  <div class="form-group">
+                    <br>
+                      <label for="inputComment">Description</label>
+                      <textarea class="form-control" id="inputComment" rows="4"></textarea>
+                  </div>
+                </form>
+
+            <br>
+<!--             <button class="btnCreatePost">Create Post</button>                
+            <button (click)="discardPost()" class="btnDiscard">Cancel</button> -->
+            <button class="btn btn-primary" data-target="#myModal" (click)="myModal.show()">Create Post</button>
+            <button (click)="discardPost()" class="btn btn-primary" data-target="#myModal" (click)="myModal.show()">Cancel</button>
+
+          </div>
+        </div>
+        <br>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid mt--7">
   </div>

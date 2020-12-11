@@ -20,7 +20,7 @@
     <div class="col-lg-5 col-md-7">
       <div class="card bg-secondary shadow border-0">
         <div class="card-header bg-transparent pb-5">
-          <div class="text-muted text-center mt-2 mb-3"><small>Sign in with</small></div>
+          <div class="text-muted text-center mt-2 mb-3"><h1>Login</h1><p>welcome</p></div>
           <!-- <div class="btn-wrapper text-center">
             <a href="javascript:void(0)" class="btn btn-neutral btn-icon">
               <span class="btn-inner--icon"><img src="../assets/img/icons/common/github.svg"></span>
@@ -82,11 +82,25 @@
                 <span *ngIf="!loginForm.get('password').valid && loginForm.get('password').touched">Password cannot be empty</span>
               </div>
             </div>
-
+<!-- 
             <span class="col-md-6 offset-md-4">
                             <button type="submit" class="login">Login</button>
-                            <span style="padding-left: 15px">New User? <a routerLink="/signup">SIGN UP</a></span>
-            </span>
+                            <!- <span style="padding-left: 15px">New User? <a routerLink="/signup">SIGN UP</a></span> ->
+            </span> -->
+
+            <div class="row" id="modals">
+              <div class="col-md-4">
+                <button
+                  class="btn btn-primary"
+                  data-target="#myModal"
+                  (click)="myModal.show()"
+                  type="submit"
+                >
+                  Login
+                </button>
+              </div>
+            </div>  
+
             <div class="login-failed" *ngIf='this.isError'>
               <p class="login-failed-text">Login Failed. Please check your credentials and try again.</p>
             </div>
