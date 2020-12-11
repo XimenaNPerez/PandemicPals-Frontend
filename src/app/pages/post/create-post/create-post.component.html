@@ -1,24 +1,3 @@
-<!-- <div class="container">
-    <div class="row">
-      <hr />
-      <div class="create-post-container col-md-9">
-        <form class="post-form" [formGroup]="createPostForm" (ngSubmit)="createPost()">
-          <div class="form-group">
-            <div class="create-post-heading">Create Post</div>
-            <hr />
-
-            ----
-  
-                <button class="btnCreatePost">Create Post</button>                
-                <button (click)="discardPost()" class="btnDiscard">Cancel</button>
-              </div>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div> -->
-
   <div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
     <div class="container-fluid">
       <div class="header-body">
@@ -51,8 +30,8 @@
             <br>
 <!--             <button class="btnCreatePost">Create Post</button>                
             <button (click)="discardPost()" class="btnDiscard">Cancel</button> -->
-            <button (click)="createPost()" class="btn btn-primary" data-target="#myModal" (click)="myModal.show()">Create Post</button>
-            <button (click)="discardPost()" class="btn btn-primary" data-target="#myModal" (click)="myModal.show()">Cancel</button>
+            <button (click)="createPost()" class="btn btn-primary" >Create Post</button>
+            <button (click)="discardPost()" class="btn btn-primary" >Cancel</button>
 
           </div>
         </div>

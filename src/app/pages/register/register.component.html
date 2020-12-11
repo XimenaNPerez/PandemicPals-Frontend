@@ -25,66 +25,26 @@
           <div class="text-center text-muted mb-4">
             <small>Sign up for a Pandemic Pals account:</small>
           </div>
-          <form role="form">
-            <div class="form-group">
-              <div class="input-group input-group-alternative mb-3">
-                <div class="input-group-prepend">
-                  <span class="input-group-text"><i class="ni ni-hat-3"></i></span>
-                </div>
-                <input class="form-control" placeholder="Name" type="text">
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="input-group input-group-alternative mb-3">
-                <div class="input-group-prepend">
-                  <span class="input-group-text"><i class="ni ni-email-83"></i></span>
-                </div>
-                <input class="form-control" placeholder="Email" type="email">
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="input-group input-group-alternative">
-                <div class="input-group-prepend">
-                  <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
-                </div>
-                <input class="form-control" placeholder="Password" type="password">
-              </div>
-            </div>
-            <!-- <div class="text-muted font-italic"><small>password strength: <span class="text-success font-weight-700">strong</span></small></div> -->
-            <div class="row my-4">
-              <div class="col-12">
-                <!-- <div class="custom-control custom-control-alternative custom-checkbox">
-                  <input class="custom-control-input" id="customCheckRegister" type="checkbox">
-                  <label class="custom-control-label" for="customCheckRegister">
-                    <span class="text-muted">I agree with the <a href="#!">Privacy Policy</a></span>
-                  </label>
-                </div> -->
-              </div>
-            </div>
-            <div class="text-center">
-              <button type="button" class="btn btn-primary mt-4">Create account</button>
-            </div>
-          </form>
         </div> 
-<!--         <div class="card-body">
-          <form [formGroup]="registerForm" (ngSubmit)="reigster()">
+
+        <div class="card-body">
+          <form [formGroup]="signupForm" (ngSubmit)="signup()">
               <div class="form-group row">
-                  <label for="email_address" class="col-md-4 col-form-label text-md-right">E-Mail
-                      Address</label>
+                  <label for="email_address" class="col-md-4 col-form-label text-md-right">Email</label>
                   <div class="col-md-6">
-                      <input type="text" [formControlName]="'email'" id="email_address" class="form-control" name="email-address" required
+                      <input type="text" [formControlName]="'email'" id="email_address"  class="form-control" name="email-address" required
                           autofocus>
-                      <span *ngIf="!registerForm.get('email').valid && registerForm.get('email').touched">
+                      <span *ngIf="!signupForm.get('email').valid && signupForm.get('email').touched">
                           Please provide a valid email
                       </span>                                    
                   </div>
               </div>
 
               <div class="form-group row">
-                  <label class="col-md-4 col-form-label text-md-right">User Name</label>
+                  <label class="col-md-4 col-form-label text-md-right">Username</label>
                   <div class="col-md-6">
-                      <input type="text" [formControlName]="'username'"class="form-control" required autofocus>
-                      <span *ngIf="!registerForm.get('username').valid && registerForm.get('username').touched">
+                      <input type="text"  [formControlName]="'username'"class="form-control" required autofocus>
+                      <span *ngIf="!signupForm.get('username').valid && signupForm.get('username').touched">
                           Please provide a valid username
                       </span>                                 
                   </div>
@@ -93,21 +53,32 @@
               <div class="form-group row">
                   <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
                   <div class="col-md-6">
-                      <input type="password" [formControlName]="'password'" id="password" class="form-control" name="password" required>
-                      <span *ngIf="!registerForm.get('password').valid && registerForm.get('password').touched">
+                      <input type="password"  [formControlName]="'password'" id="password" class="form-control" name="password" required>
+                      <span *ngIf="!signupForm.get('password').valid && signupForm.get('password').touched">
                           Please provide a valid Password
                       </span>  
                   </div>
               </div>
 
-              <span class="col-md-6 offset-md-4"
-                  <button type="submit" class="register">
-                      Register
-                  </button>
-                  <span style="padding-left: 15px">Existing user? <a routerLink="/login">Log In</a></span>
+              <span class="col-md-6 offset-md-4">
+
+                  <button type="submit" class="sign-up" class="btn btn-primary mt-4">Create account</button>
+
+                  <span style="padding-left: 15px"> <a routerLink="/login">Log In</a></span>
               </span>
           </form>
-      </div>         -->
+      </div>
+
+
+
+
+
+
+
+
+
+
+
       </div>
     </div>
   </div>
