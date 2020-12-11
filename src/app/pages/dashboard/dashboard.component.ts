@@ -27,6 +27,8 @@ export class DashboardComponent implements OnInit {
   public clicked: boolean = true;
   public clicked1: boolean = false;
 
+  constructor(private router: Router) { }
+  
   ngOnInit() {
 
     this.datasets = [
@@ -62,9 +64,9 @@ export class DashboardComponent implements OnInit {
     this.salesChart.update();
   }
 
-/*  goToCreatePost() {
+  goToCreatePost() {
     this.router.navigateByUrl('/create-post');    
-  }  */
+  }  
 
 }
 
