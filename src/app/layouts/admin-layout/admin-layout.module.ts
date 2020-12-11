@@ -11,7 +11,7 @@ import { IconsComponent } from '../../pages/icons/icons.component';
 import { MapsComponent } from '../../pages/maps/maps.component';
 import { UserProfileComponent } from '../../pages/user-profile/user-profile.component';
 import { TablesComponent } from '../../pages/tables/tables.component';
-import { CreatePostComponent } from '../../pages/post/create-post/create-post.component';
+//import { CreatePostComponent } from '../../pages/post/create-post/create-post.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AdviceComponent } from '../../pages/advice/advice.component';
 import { SocialComponent } from '../../pages/social/social.component';
@@ -34,7 +34,7 @@ import { ResourcesComponent } from '../../pages/resources/resources.component';
     TablesComponent,
     IconsComponent,
     MapsComponent,
-    CreatePostComponent,
+    //CreatePostComponent,
     AdviceComponent,
     ResourcesComponent,
     SocialComponent
