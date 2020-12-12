@@ -21,7 +21,7 @@ export const ROUTES: RouteInfo[] = [
     { path: '/resources', title: 'Resources',  icon:'ni-single-copy-04 text-cyan', class: '' },
     { path: '/advice', title: 'Advice',  icon:'ni-satisfied text-yellow', class: '' },
     { path: '/social', title: 'Social',  icon:'ni-chat-round text-purple', class: '' },
-    { path: '/about', title: 'About',  icon:'ni-planet text-blue', class: '' },
+    { path: '/about', title: 'About',  icon:'ni-zoom-split-in text-blue', class: '' },
     // { path: '/resources', title: 'Resources',  icon:'ni-single-copy-04 text-purple', class: '' },
     // { path: '/resources', title: 'Resources',  icon:'ni-planet text-blue', class: '' },
     // { path: '/social', title: 'Social',  icon:'ni-planet text-blue', class: '' },
