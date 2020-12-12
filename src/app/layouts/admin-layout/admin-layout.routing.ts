@@ -9,6 +9,7 @@ import { CreatePostComponent } from '../../pages/post/create-post/create-post.co
 import { AdviceComponent } from '../../pages/advice/advice.component';
 import { SocialComponent } from '../../pages/social/social.component';
 import { ResourcesComponent } from '../../pages/resources/resources.component';
+import { AboutComponent} from '../../pages/about/about.component';
 
 
 export const AdminLayoutRoutes: Routes = [
@@ -20,6 +21,7 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'create-post',    component: CreatePostComponent },
     { path: 'advice',         component: AdviceComponent },
     { path: 'social',         component: SocialComponent },
-    { path: 'resources',      component: ResourcesComponent }
+    { path: 'resources',      component: ResourcesComponent },
+    { path: 'about',          component: AboutComponent}
 
 ];
