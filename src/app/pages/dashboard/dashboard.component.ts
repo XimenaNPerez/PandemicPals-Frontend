@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { PostModel } from '../../shared/post-model';
 import { PostService } from '../../shared/post.service';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-dashboard',
@@ -11,7 +13,7 @@ export class DashboardComponent implements OnInit {
 
   posts: Array<PostModel> = [];
 
-  constructor(private postService: PostService) {
+  constructor(private postService: PostService, private router: Router) {
     this.postService.getAllPosts().subscribe(post => {
       this.posts = post;
     });
@@ -20,9 +22,9 @@ export class DashboardComponent implements OnInit {
   ngOnInit(): void {
   }
 
-/*  goToCreatePost() {
+goToCreatePost() {
     this.router.navigateByUrl('/create-post');
-  }  */
+  } 
 
 }
 
